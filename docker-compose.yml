@@ -11,7 +11,7 @@ services:
 
     volumes:
       - db_data:/var/lib/postgresql/data
-      - ./rsc/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./rsc/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
     ports:
       - "${POSTGRES_PORT}:5432"
